@@ -17,6 +17,9 @@ export default function TabelaLiquidez() {
             <label className='tabelaLiquidez-label'>Cliente</label><br/>
             <input className='tabelaLiquidez-input' /><br/>
 
+            <label className='tabelaLiquidez-label'>Empresa</label><br/>
+            <input className='tabelaLiquidez-input' /><br/>
+
             <label className='tabelaLiquidez-label'>Data de faturamento</label><br/>
             <input  className='tabelaLiquidez-input' type='date'/><br/>
 
@@ -33,6 +36,9 @@ export default function TabelaLiquidez() {
             
 
             <label className='tabelaLiquidez-label'>Bonificação</label><br/>
+            <input className='tabelaLiquidez-input' type='integer' placeholder='R$ 9.999,99' keyboardType='numeric' /><br/>
+
+            <label className='tabelaLiquidez-label'>Total Flex</label><br/>
             <input className='tabelaLiquidez-input' type='integer' placeholder='R$ 9.999,99' keyboardType='numeric' /><br/>
 
             <label className='tabelaLiquidez-label'>Valor total</label><br/>
