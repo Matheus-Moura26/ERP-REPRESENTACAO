@@ -1,7 +1,10 @@
 //import style
 import '../styles/pages/tabelaLiquidez.css'
+import '../styles/components/components.css'
 
+//import settings
 import React from 'react'
+
 
 export default function TabelaLiquidez() {
   return (
@@ -44,6 +47,7 @@ export default function TabelaLiquidez() {
             <label className='tabelaLiquidez-label'>Valor total</label><br/>
             <input  className='tabelaLiquidez-input' type='number' placeholder='R$ 9.999,99' keyboardType='numeric'/><br/>
             
+            <button className='btn-verde'>Enviar</button>
         </div>
     </div>
   )
