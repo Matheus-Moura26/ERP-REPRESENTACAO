@@ -1,0 +1,28 @@
+.tabelaLiquidez-title-card{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tabelaLiquidez-title-h1{
+
+}
+
+.tabelaLiquidez-card{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabelaLiquidez-label{
+    font-size: 20px;
+}
+
+.tabelaLiquidez-input{
+    border: 3px solid #45a8c4;
+    border-radius: 10px;
+    width: 250px;
+    height: 35px;
+}

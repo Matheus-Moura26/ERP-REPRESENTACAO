@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+//Import library´s or hooks
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
+//Import components
+import NavBar from "./components/navBar";
+
+//Import pages
+import Main from "./pages/main";
+import TabelaLiquidez from './pages/tabelaLiquidez';
+
+//import style
+import './styles/reset.css'
+//Create settings
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/tabelaLiquidez" element={<TabelaLiquidez />} />
+        <Route path="/" element={<Main />} />
+      </Routes>
+    </Router>
+    
   );
 }
 

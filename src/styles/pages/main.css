@@ -1,0 +1,7 @@
+#mainPage-card{
+    margin-top: 38px;
+}
+#mainPage-card h1{
+    display: flex;
+    justify-content: center;
+}

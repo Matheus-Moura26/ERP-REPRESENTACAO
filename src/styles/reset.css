@@ -1,0 +1,47 @@
+/* Reset CSS */
+
+/* Define uma margem e preenchimento padrão para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Remove a decoração de links padrão */
+  a {
+    text-decoration: none;
+    color: inherit; /* Herda a cor do texto do elemento pai */
+  }
+  
+  
+  /* Define estilos padrão para listas não ordenadas e ordenadas */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Remove as quebras de texto automáticas */
+  pre, code {
+    white-space: pre-wrap;
+  }
+  
+  /* Remova a margem padrão dos títulos */
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  /* Limpa as configurações padrão de formulários */
+  input, button, textarea, select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  
+  /* Estilo para elementos HTML5 semânticos */
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+  }
+  
