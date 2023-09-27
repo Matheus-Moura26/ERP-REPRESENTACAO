@@ -1,0 +1,43 @@
+.comissoes-filtro-card{
+    background-color: rgb(225, 236, 255);
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 20vw;
+}
+
+.comissoes-filtro-li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.comissoes-filtro-seletor{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 28px;
+    width: 180px;
+    text-align: center;
+}
+
+.comissoes-filtro-btn-verde{
+    background-color: rgb(94, 255, 94);
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .6s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: black;
+    border: solid black 1px;
+}
+
+.comissoes-filtro-btn-verde:hover{
+    background-color: rgb(59, 255, 59);
+}

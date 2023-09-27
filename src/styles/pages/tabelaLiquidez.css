@@ -11,12 +11,25 @@ div{
 
 }
 
-.tabelaLiquidez-card{
+.tabelaLiquidez-box{
     margin-top: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 10%;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.tabelaLiquidez-card{
+    width: 310px;
+    padding: 8px 0px;
+}
+
+.position-btnSubmit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tabelaLiquidez-label{

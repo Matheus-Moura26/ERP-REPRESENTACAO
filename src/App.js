@@ -6,7 +6,12 @@ import NavBar from "./components/navBar";
 
 //Import pages
 import Main from "./pages/main";
-import TabelaLiquidez from './pages/tabelaLiquidez';
+import AdicionaLiquidez from './pages/liquidezComissao/adicionarLiquidez';
+import FinancialPage from './pages/financialPage';
+import LiquidezComissaoHomePage from './pages/liquidezComissao/liquidezComissaoHomePage';
+import MostrarComissao from './pages/liquidezComissao/mostrarComissao';
+import Comissoes from './pages/liquidezComissao/comissoes';
+
 
 //import style
 import './styles/reset.css'
@@ -18,7 +23,13 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/tabelaLiquidez" element={<TabelaLiquidez />} />
+        {/* Pagina financeira  */}
+        <Route path="/financialPage" element={<FinancialPage />} />
+          {/* Relacionado as comissões de representantes */}
+          <Route path="/liquidezComissaoHomePage" element={<LiquidezComissaoHomePage />} />
+          <Route path="/adicionarLiquidez" element={<AdicionaLiquidez />} />
+          <Route path="/mostrarComissao" element={<MostrarComissao />} />
+          <Route path="/comissoes" element={<Comissoes />} />
         <Route path="/" element={<Main />} />
       </Routes>
     </Router>

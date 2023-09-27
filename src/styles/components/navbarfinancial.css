@@ -1,0 +1,36 @@
+#navBar-financial-card{
+    display: flex;
+    height: 46px;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 63px;
+}
+#navBar-financial-card ul{
+
+}
+#navBar-financial-title{
+    position: absolute;
+    margin-right: 43%;
+    margin-top: 5px;
+}
+
+.navBar-financial-button {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 4px 10px;
+    transition: 0.5s;
+    background-color: rgb(19, 27, 71);
+    margin: 5px;
+    color: white;
+    transition: .6s;
+}
+.navBar-financial-button:hover {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 4px 10px;
+    transition: 0.5s;
+    background-color: white;
+    margin: 5px;
+    color: rgb(19, 27, 71);
+}

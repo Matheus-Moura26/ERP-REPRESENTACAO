@@ -12,9 +12,15 @@ export default function NavBar() {
   return (
             <nav id='navBar-card'>
                 <ul>
-                    <li className='button'><Link  to="/tabelaLiquidez">Tabela de líquidez</Link></li>
-                    <li className='button'><Link  to="/">Botão</Link></li>
-                    <li className='button'><Link  to="/">Botão</Link></li>
+                  <Link  to="/financialPage">
+                    <li className='button'>Financeiro</li>
+                  </Link>
+                  <Link  to="/">
+                    <li className='button'>Botão</li>
+                  </Link>
+                  <Link  to="/">
+                    <li className='button'>Botão</li>
+                  </Link>
                 </ul>
             </nav>
   )

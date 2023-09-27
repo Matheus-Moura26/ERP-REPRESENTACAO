@@ -1,0 +1,34 @@
+#mostrarComissao-navBar-financial-card{
+    display: flex;
+    height: 46px;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    padding-right: 63px;
+}
+
+.mostrarComissao-historico-title{
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.mostrarComissao-historico-table- {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.mostrarComissao-historico-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.mostrarComissao-historico-linha{
+
+}
+
+.mostrarComissao-historico-celulas {
+    padding: 10px 50px;
+}
