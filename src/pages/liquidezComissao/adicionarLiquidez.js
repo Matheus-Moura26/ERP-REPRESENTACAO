@@ -34,6 +34,7 @@ export default function AdicionaLiquidez() {
     }, [formData]);
 
     const onSubmit = async (data) => {
+      
       setFormdata(data);
       try {
         const response = await axios.post(

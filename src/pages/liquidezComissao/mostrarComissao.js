@@ -69,6 +69,7 @@ export default function MostrarComissao() {
               </tr>
             ))
           }
+          
 
         </tbody>
     </table>
