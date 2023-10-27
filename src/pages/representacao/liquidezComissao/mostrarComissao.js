@@ -4,8 +4,9 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 //import style
-import "../../styles/components/components.css";
-import "../../styles/pages/mostrarComissao.css"
+import "../../../styles/components/components.css";
+import "../../../styles/pages/representacao/mostrarComissao.css";
+import "../../../styles/components/navbarfinancial.css"
 
 export default function MostrarComissao() {
 
@@ -29,9 +30,9 @@ export default function MostrarComissao() {
   };  
 
   return (
-    <div>
-      <div id='mostrarComissao-navBar-financial-card'>
-        <button onClick={puxarDados} className='button-financial-1'>
+    <div className='body'>
+      <div className='financeiro-card-navbar'>
+        <button onClick={puxarDados} >
           Todos os pedidos
         </button>
         <Link to="/comissoes">

@@ -1,11 +1,14 @@
 //import style
-import '../../styles/pages/tabelaLiquidez.css'
-import '../../styles/components/components.css'
+import '../../../styles/pages/representacao/tabelaLiquidez.css'
+import '../../../styles/components/components.css'
+
 
 //import library and hooks
 import React,{useState, useEffect} from 'react'
 import { useForm } from 'react-hook-form';
 import axios from 'axios'
+import InputMask from 'react-input-mask'
+
 
 
 export default function AdicionaLiquidez() {
@@ -53,10 +56,29 @@ export default function AdicionaLiquidez() {
         console.log(`Erro ao enviar requisição: ${error}`)
       }
     };
+
+
+    function formatarData(dataComissao) {
+      const data = new Date(dataComissao);
+      const dia = String(data.getDate()).padStart(2, '0');
+      const mes = String(data.getMonth() + 1).padStart(2, '0');
+      const ano = data.getFullYear();
+      return `${dia}/${mes}/${ano}`;
+    }
+  
+      // Função para formatar o valor como dinheiro
+   // No início do seu componente, após importações
+    const formatMoney = (value) => {
+      if (value === '') return 'R$ 0,000'; // Lidando com valores vazios
+      return new Intl.NumberFormat('pt-br', {
+        style: 'currency',
+        currency: 'BRL',
+      }).format(Number(value)); // Converta para número antes de formatar
+    };
       
 
   return (
-    <div>
+    <div className='body'>
         <div className='tabelaLiquidez-title-card'>
             <h1 className='tabelaLiquidez-title-h1'>
                 Tabela de liquidez
@@ -151,14 +173,14 @@ export default function AdicionaLiquidez() {
                         <td className='mostrarComissao-historico-celulas'>{historico.cliente}</td>
                         <td className='mostrarComissao-historico-celulas'>{historico.empresa}</td>
                         <td className='mostrarComissao-historico-celulas'>{historico.idPedido}</td>
-                        <td className='mostrarComissao-historico-celulas'>{historico.data}</td>
+                        <td className='mostrarComissao-historico-celulas'>{formatarData(historico.data)}</td>
                         <td className='mostrarComissao-historico-celulas'>{historico.prazo}</td>
-                        <td className='mostrarComissao-historico-celulas'>{historico.bonificacao}</td>
-                        <td className='mostrarComissao-historico-celulas'>{historico.flex}</td>
-                        <td className='mostrarComissao-historico-celulas'>{historico.valorTotal}</td>
+                        <td className='mostrarComissao-historico-celulas'>{isNaN(parseInt(historico.bonificacao)) ? 0 : formatMoney(Number(parseInt(historico.bonificacao)))}</td>
+                        <td className='mostrarComissao-historico-celulas'>{isNaN(parseInt(historico.flex)) ? 0 : formatMoney(Number(parseInt(historico.flex)))}</td>
+                        <td className='mostrarComissao-historico-celulas'>{formatMoney(Number(parseInt(historico.valorTotal)))}</td>
                       </tr>
                     ))
-                  }
+                  } 
                 </tbody>
             </table>
 

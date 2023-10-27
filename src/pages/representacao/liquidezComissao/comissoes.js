@@ -6,7 +6,8 @@ import axios from 'axios';
 
 
 //import style
-import '../../styles/pages/comissao.css'
+import "../../../styles/components/components.css"
+import '../../../styles/pages/representacao/comissao.css'
 
 export default function Comissoes() {
 
@@ -31,7 +32,6 @@ export default function Comissoes() {
   };
 
   //Acessar banco de dados
-
   const [todasComissoes, setTodasComissoes] = useState([])
   const [comissoesDefinidas, setComissoesDefinidas] = useState([])
 
@@ -74,9 +74,19 @@ const buscarComissões = async () => {
   }, [comissoesDefinidas]);
 
 
+  function formatarData(dataComissao) {
+    const data = new Date(dataComissao);
+    const dia = String(data.getDate()).padStart(2, '0');
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const ano = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+  }
+
+  
+  
   
   return (
-    <div>
+    <div className='body'>
         <ul className='comissoes-filtro-card'>
             <li className='comissoes-filtro-li'>
                 <select 
@@ -113,26 +123,26 @@ const buscarComissões = async () => {
           <table className='comissoes-table-table'>
             <tbody className='comissoes-table-tbody'>
               <tr className='comissoes-table-tr'>
-                <th className='comissoes-table-th'>cliente</th>
-                <th className='comissoes-table-th'>empresa</th>
-                <th className='comissoes-table-th'>idPedido</th>
-                <th className='comissoes-table-th'>data</th>
-                <th className='comissoes-table-th'>valorTotal</th>
+                <th className='comissoes-table-th'>CLIENTE</th>
+                <th className='comissoes-table-th'>EMPRESA</th>
+                <th className='comissoes-table-th'>ID PEDIDO</th>
+                <th className='comissoes-table-th'>DATA</th>
+                <th className='comissoes-table-th'>COMISSÃO LIQUIDA</th>
+                <th className='comissoes-table-th'>VALOR TOTAL</th>
               </tr>
               {comissoesDefinidas
                 .slice()
-                .sort((a,b) => new Date(b.dataComissao)- new Date(a.dataComissao))
-                .map((asComissoes, index)=>(
+                .sort((a, b) => new Date(b.dataComissao) - new Date(a.dataComissao))
+                .map((asComissoes, index) => (
                   <tr className='comissoes-table-tr' key={index}>
                     <td className='comissoes-table-td'>{asComissoes.cliente}</td>
                     <td className='comissoes-table-td'>{asComissoes.empresa}</td>
                     <td className='comissoes-table-td'>{asComissoes.idPedido}</td>
-                    <td className='comissoes-table-td'>{asComissoes.dataComissao}</td>
+                    <td className='comissoes-table-td'>{formatarData(asComissoes.dataComissao)}</td>
                     <td className='comissoes-table-td'>{asComissoes.comissaoLiquida}</td>
                     <td className='comissoes-table-td'>{asComissoes.valorTotal}</td>
                   </tr>
                 ))
-
               }
             </tbody>
           </table>

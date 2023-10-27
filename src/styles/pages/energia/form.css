@@ -1,0 +1,91 @@
+.form-body{
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #101141;
+  position: absolute;
+}
+  .login-form-card{
+    background-color: rgba(46, 46, 160, 0.364);
+    box-shadow: 0 0 50px 15px #127bad;
+    height: 500px;
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    position: absolute;
+  }
+    #login-form-title{
+      margin-top: 100px;
+      width: 100%;
+      color: white;
+      font-size: 2rem;
+    }
+    .login-form-form{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: -50px;
+    }
+      .login-form-contextArea{
+        background-color: rgba(27, 27, 99, 0.434);
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+        .login-form-input{
+          text-align: center;
+          width: 300px;
+          height: 40px;
+          color: white;
+          border-bottom: 2px solid rgb(200,200,200);
+          cursor: text;
+          position: relative;
+          z-index: 1;
+        }
+        input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        .login-form-label{
+          position: absolute;
+          color: white;
+          transition: .5s ease-in-out ;
+          z-index: 0;
+          align-items: flex-start;
+        }
+        .login-form-input:focus,
+        .login-form-input:valid{
+          border-bottom: 2px solid cornflowerblue;
+          
+        }
+        .login-form-input:focus ~ label,
+        .login-form-input:valid ~ label{
+          color: cornflowerblue;
+          transform: translateY(-24px);
+        }
+        .btn-login{
+          margin-bottom: 30px;
+          width: 180px;
+          height: 30px;
+          border-radius: 5px;
+          background-color: rgb(0, 248, 37);
+          border: 1px solid #9fffac;
+          color: #101141;
+          transition: .5s;
+        }
+        .btn-login:hover{
+          background-color: #3cff56;
+          border: 1px solid #9fffac;
+        }
