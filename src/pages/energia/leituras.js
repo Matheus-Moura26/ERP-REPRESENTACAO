@@ -105,7 +105,7 @@ export default function Leituras() {
 
   return (
     <div className='leituras-body'>
-
+      
           { /* 1- Primeiro um card com o cliente, endereço data da leitura assim como vencimento */}
           <div className='leituras-totalCard'>
               <div className='leituras-PrimeiroCard-cliente'>

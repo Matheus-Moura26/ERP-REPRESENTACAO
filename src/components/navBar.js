@@ -30,18 +30,18 @@ export default function NavBar() {
                     <li className='navBar-button'>Configurações</li>
                   </Link>
 
-                  <Link  to="/leituras">
-                      <li className='navBar-button'>Leituras</li>
-                    </Link>
-                    <Link  to="/financeiro">
-                      <li className='navBar-button'>Financeiro</li>
-                    </Link>
-                    <Link  to="/">
-                      <li className='navBar-button'>Pagamentos</li>
-                    </Link>
-                    <Link  to="/requisicao">
-                      <li className='navBar-button'>Requisição</li>
-                    </Link>
+                  <Link  to="/energiaHome">
+                    <li className='navBar-button'>Gestor energético</li>
+                  </Link>
+                  {/* <Link  to="/leituras">
+                    <li className='navBar-button'>Leituras</li>
+                  </Link>
+                  <Link  to="/financeiro">
+                    <li className='navBar-button'>Financeiro</li>
+                  </Link>
+                  <Link  to="/requisicao">
+                    <li className='navBar-button'>Requisição</li>
+                  </Link> */}
 
                   <Link  to="/Logout">
                     <li id='button-logout' className='navBar-button'>Logout</li>

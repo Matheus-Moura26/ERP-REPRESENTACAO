@@ -13,6 +13,7 @@ import NavBar from "./components/navBar";
     import MostrarComissao from './pages/representacao/liquidezComissao/mostrarComissao';
     import Comissoes from './pages/representacao/liquidezComissao/comissoes';
   //ENERGIA
+    import Home from './pages/energia/energiaHome';
     import UnidadeConsumidoraCpfSubmission from './pages/energia/submission';
     import Financeiro from './pages/energia/financeiro';
     import Leituras from './pages/energia/leituras';
@@ -37,7 +38,8 @@ function App() {
             <Route path="/mostrarComissao" element={<MostrarComissao />} />
             <Route path="/comissoes" element={<Comissoes />} />
         {/* ENERGIA */}
-          <Route path='//requisicao' element={<UnidadeConsumidoraCpfSubmission />} />
+          <Route path='/energiaHome' element={<Home />} />
+          <Route path='/requisicao' element={<UnidadeConsumidoraCpfSubmission />} />
           <Route path='/financeiro' element={<Financeiro />} />
           <Route path='/leituras' element={<Leituras />} />
           <Route path='/clientes' element={<Clientes />} />

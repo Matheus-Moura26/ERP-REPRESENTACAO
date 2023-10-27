@@ -18,7 +18,7 @@
   
   
   /* Define estilos padrão para listas não ordenadas e ordenadas */
-  ul, ol {
+  ul, ol, li {
     list-style: none;
   }
   

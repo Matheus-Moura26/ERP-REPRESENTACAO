@@ -45,6 +45,9 @@
     font-size: 1.2rem;
     text-align: center;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .navBar-button:hover { 
     background-color: #27285c;
