@@ -1,9 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import { Chart } from "react-google-charts";
-import { Link } from 'react-router-dom';
+import NavBarEnergia from '../../../components/energia/navBarEnergia';
+import NavBarEnergiaFinanceiro from '../../../components/energia/navBarEnergiaFinanceiro';
 
 //import css
-  import "../../styles/pages/energia/financeiro.css";
+  import "../../../styles/pages/energia/financeiro.css";
 
   
 
@@ -110,19 +111,10 @@ export default function Financeiro() {
 
   return (
     <div className='financeiro-body'>
+      <NavBarEnergia/>
+      <NavBarEnergiaFinanceiro/>
 
       <div className='financeiro-card'>
-        <div className='financeiro-card-navbar'>
-          <Link to="/financeiro">
-            <button >Main</button>
-          </Link>
-          <Link to="/">
-            <button >Clientes e Usinas</button>
-          </Link>
-          <Link to="/">
-            <button >Outros</button>
-          </Link>
-        </div>
         <div className='financeiro-index-card'>
           <div className='financeiro-index-card-resumo'>
             <h2>Saldo de crédito: {leituras[11].saldoAcumulado}</h2>

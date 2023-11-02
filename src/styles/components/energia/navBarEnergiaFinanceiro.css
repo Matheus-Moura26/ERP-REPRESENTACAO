@@ -1,0 +1,30 @@
+.energia-financeiro-card-navbar{
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+    width: 53%;
+    top: 0;
+    left: 31.5vw;
+    position: fixed;
+    border-radius: 0rem 0rem 100rem 100rem;
+    box-shadow: 0 0 20px 2px #00adfd;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    z-index: 1;
+}
+.energia-financeiro-card-navbar-button{
+    background-color: white;
+    
+    padding: 0px 10px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 1.2rem;
+    color: #101141;
+    margin-bottom: 1px;
+}
+.energia-financeiro-card-navbar-button:hover{
+    background-color: #101141;
+    color: white;
+}

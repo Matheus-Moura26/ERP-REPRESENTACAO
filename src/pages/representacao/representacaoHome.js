@@ -3,13 +3,12 @@ import NavBarRepresentante from "../../components/representacao/navBarRepresenta
 
 import "../../styles/components/espacamento.css";
 
-export default function FinancialPage (){
+export default function RepresentacaoHome(){
   
     return (
         
         <div className="body">
             <NavBarRepresentante />
-            <NavBarFinancial/>
             
 
         </div>

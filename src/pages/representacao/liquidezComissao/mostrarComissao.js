@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 //import style
 import "../../../styles/components/components.css";
 import "../../../styles/pages/representacao/mostrarComissao.css";
-import "../../../styles/components/navbarfinancial.css"
+import "../../../styles/components/representacao/navbarRepresentantefinancial.css"
 
 export default function MostrarComissao() {
 

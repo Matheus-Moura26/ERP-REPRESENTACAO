@@ -2,10 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: end;
-    top: 0;
-    background-color: #101141;
-    min-height: 100vh;
-    width: 100%;
 }
     .financeiro-card{
         display: flex;
@@ -18,35 +14,6 @@
         min-height: 100vh;
         background-color: white;
     }
-        .financeiro-card-navbar{
-            background-color: rgb(255, 255, 255);
-            height: 50px;
-            width: 50%;
-            top: 0;
-            position: fixed;
-            border-radius: 0rem 0rem 100rem 100rem;
-            box-shadow: 0 0 20px 2px #00adfd;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            z-index: 2;
-        }
-        .financeiro-card-navbar  button{
-            border: 2px solid #101141;
-            background-color: #101141;
-            color: white;
-            width: 170px;
-            height: 30px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: .2s;
-            font-size: 1.2rem;
-        }
-        .financeiro-card-navbar  button:hover{
-            border: 2px solid #101141;
-            background-color: white;
-            color: #101141;
-        }
         .financeiro-index-card{
             width: 100%;
             display: flex;

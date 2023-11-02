@@ -2,24 +2,27 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+//css
+import "../../styles/components/energia/navBarEnergia.css"
 
-function navBarEnergia() {
+
+function NavBarEnergia() {
   return (
     <nav >
         <div className='navBarEnergia-card-navbar'>
             <Link  to="/leituras">
-            <li className='navBar-button'>Leituras</li>
+            <li >Leituras</li>
             </Link>
             <Link  to="/financeiro">
-            <li className='navBar-button'>Financeiro</li>
+            <li >Financeiro</li>
             </Link>
             <Link  to="/requisicao">
-            <li className='navBar-button'>Requisição</li>
+            <li>Requisição</li>
             </Link>
         </div>
     </nav>    
   )
 }
 
-export default navBarEnergia
+export default NavBarEnergia
 

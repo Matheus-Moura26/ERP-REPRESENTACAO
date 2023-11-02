@@ -1,15 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import navBarEnergia from '../../components/navBarEnergia';
+import NavBarEnergia from '../../components/energia/navBarEnergia';
 
 
+import "../../styles/components/energia/navBarEnergia.css"
 import "../../styles/reset.css"
 import "../../styles/pages/energia/home.css"
 
-export default function Home() {
+function Home() {
   return (
     <div className='home-body'>
-      <navBarEnergia />
+      <NavBarEnergia />
     </div>
   )
 }
+
+export default Home

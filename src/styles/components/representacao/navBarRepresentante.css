@@ -1,0 +1,29 @@
+.navBarRepresentante-card-navbar{
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 50%;
+    top: 0;
+    left: 33vw;
+    position: fixed;
+    border-radius: 0rem 0rem 100rem 100rem;
+    box-shadow: 0 0 20px 2px #00adfd;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+}
+.navBarRepresentante-card-navbar li{
+    text-align: center;
+    background-color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 1.2rem;
+    color: #101141;
+    margin-bottom: 1px;
+}
+.navBarRepresentante-card-navbar li:hover{
+    background-color: #101141;
+    color: white;
+}

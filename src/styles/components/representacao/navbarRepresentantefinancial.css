@@ -1,30 +1,30 @@
 .financeiro-card-navbar{
     background-color: rgb(255, 255, 255);
-    height: 50px;
-    width: 50%;
+    height: 10.5vh;
+    width: 53%;
     top: 0;
-    left: 33vw;
+    left: 31.5vw;
     position: fixed;
     border-radius: 0rem 0rem 100rem 100rem;
     box-shadow: 0 0 20px 2px #00adfd;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-around;
-    z-index: 2;
+    z-index: 1;
 }
 .financeiro-card-navbar  button{
-    border: 2px solid #101141;
-    background-color: #101141;
-    color: white;
-    width: 170px;
-    height: 30px;
+    background-color: white;
+    color: #101141;
+    
+    padding: 0px 10px;
+    height: 20px;
     border-radius: 10px;
     cursor: pointer;
     transition: .2s;
     font-size: 1.2rem;
+    margin-bottom: 1px;
 }
 .financeiro-card-navbar  button:hover{
-    border: 2px solid #101141;
-    background-color: white;
-    color: #101141;
+    background-color: #101141;
+    color: white;
 }

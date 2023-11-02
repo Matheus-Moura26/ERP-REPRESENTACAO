@@ -1,0 +1,299 @@
+.dropshippingHomePage-body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-left: 13vw;
+}
+    .dropshippingHomePage-content1{
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+        .dropshippingHomePage-form-tornarDPSHP-body{
+            top: 0;
+            width: 87vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.578);
+            backdrop-filter: blur(5px);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+            .dropshippingHomePage-form-tornarDPSHP-card{
+                width: 40%;
+                height: 40vh;
+                background-color: rgba(0, 31, 153, 0.749);
+                backdrop-filter: blur(100px);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+                .dropshippingHomePage-form-tornarDPSHP-card-close{
+                    position: absolute;
+                    margin-top: -35vh;
+                    margin-right: -32vw;
+                    padding: 3px 6px;
+                    background-color: red;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+                .dropshippingHomePage-form-tornarDPSHP-card label{
+                    padding-top: 5vh;
+                    width: 100%;
+                    color: white;
+                }
+                #dropshippingHomePage-form-tornarDPSHP-div-btn{
+                    display: flex;
+                    width: 20%;
+                    background-color: rgba(255, 255, 255, 0);
+                    justify-content: space-around;
+                }
+                    .dropshippingHomePage-form-tornarDPSHP-card button{
+                        background-color: greenyellow;
+                        padding: 6px 10px;
+                        border-radius: 10px;
+                        cursor: pointer;/* 
+                        color: rgb(255, 255, 255); */
+                    }
+                    .dropshippingHomePage-form-tornarDPSHP-card button:hover{
+                        background-color: rgb(153, 255, 0);
+                    }
+        .dropshippingHomePage-form-filtrar-body{
+            top: 0;
+            width: 87vw;
+            height: 100vh;
+            background-color: #7d7d855b;
+            backdrop-filter: blur(50px);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+
+        }
+            .dropshippingHomePage-form-filtrar-card{
+                width: 40%;
+                height: 64vh;
+                background-color: rgb(23, 23, 105);
+                box-shadow: 0 0 50px 15px #127bad;
+                border-radius: 15px;
+                backdrop-filter: blur(100px);
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+               }
+                .dropshippingHomePage-form-filtrar-card-close{
+                    position: absolute;
+                    margin-top: -60vh;
+                    margin-right: -32vw;
+                    padding: 3px 6px;
+                    background-color: red;
+                    border-radius: 15px;
+                    cursor: pointer;
+                }
+                
+                .dropshippingHomePage-form-filtrar-card label{
+                    padding-top: .5vh;
+                    width: 70%;
+                    color: white;
+                }
+                .dropshippingHomePage-form-filtrar-card input{
+                    padding-top: .5vh;
+                    width: 70%;
+                    border-bottom: 1px solid blue;
+                }
+                .dropshippingHomePage-form-filtrar-card select{
+                    padding-top: .5vh;
+                    width: 70%;
+                    border-bottom: 1px solid blue;
+                    color: white;
+                }
+                .dropshippingHomePage-form-filtrar-card select option{
+                    color: black;
+                }
+                .dropshippingHomePage-form-filtrar-card button{
+                    background-color: greenyellow;
+                    padding: 10px 10px;
+                    margin-top: 3vh;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    text-shadow: .1px .1px black;
+                }
+                .dropshippingHomePage-form-filtrar-card button:hover{
+                    background-color: rgb(153, 255, 0);
+                }
+        .dropshippingHomePage-form-cadastroProduto-body{
+            top: 0;
+            width: 87vw;
+            height: 100vh;
+            background-color: rgba(255, 255, 255, 0.578);
+            backdrop-filter: blur(5px);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        .dropshippingHomePage-form-cadastroProduto-card{
+            width: 40%;
+            height: 64vh;
+            background-color: rgba(0, 31, 153, 0.749);
+            backdrop-filter: blur(100px);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropshippingHomePage-form-cadastroProduto-card-close{
+            position: absolute;
+            margin-top: -60vh;
+            margin-right: -32vw;
+            padding: 3px 6px;
+            background-color: red;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        
+        .dropshippingHomePage-form-cadastroProduto-card label{
+            padding-top: .5vh;
+            width: 70%;
+            color: white;
+        }
+        .dropshippingHomePage-form-cadastroProduto-card input{
+            padding-top: .5vh;
+            width: 70%;
+            border-bottom: 1px solid blue;
+        }
+        .dropshippingHomePage-form-cadastroProduto-card select{
+            padding-top: .5vh;
+            width: 70%;
+            border-bottom: 1px solid blue;
+        }
+        .dropshippingHomePage-form-cadastroProduto-card button{
+            background-color: greenyellow;
+            padding: 10px 10px;
+            margin-top: 3vh;
+            border-radius: 10px;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            text-shadow: .1px .1px black;
+        }
+        .dropshippingHomePage-form-cadastroProduto-card button:hover{
+            background-color: rgb(153, 255, 0);
+        }
+        .dropshippingHomePage-resumo-card{
+            width: 96.5%;
+            background-color: rgba(206, 229, 250, 0.4);
+            backdrop-filter: blur(50px);
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0px;
+            z-index: 0;
+        }
+        .dropshippingHomePage-table-tr-addDelete{
+            display: flex;
+            margin-left: -50vh;
+        }
+            .dropshippingHomePage-table-tr-addDelete input{
+                margin-left: 10px;
+                border-radius: 15px;
+                border: 1px solid black;
+                width: 8vw;
+            }
+            #dropshippingHomePage-table-tr-addDelete-th-add{
+                width: 5vw;
+                background-color: white;
+
+            }
+            #dropshippingHomePage-table-tr-addDelete-th-add-btn{
+                text-align: center;
+                margin-left: 10px;
+                width: 8vw;
+                background-color: white;
+                color: black;
+                border: #127bad 1px solid;
+                border-radius: 15px;
+                transition: .3s ease-in-out;
+                cursor: pointer;
+            }
+            #dropshippingHomePage-table-tr-addDelete-th-add-btn:hover{
+                background-color: #127bad;
+            }
+            #dropshippingHomePage-table-tr-addDelete-th-delete{
+                text-align: center;
+                margin-left: 10px;
+                width: 8vw;
+                 background-color: white;
+                 color: black;
+                 border: #127bad 1px solid;
+                 border-radius: 15px;
+                 transition: .3s ease-in-out;
+                 cursor: pointer;
+            }
+            #dropshippingHomePage-table-tr-addDelete-th-delete:hover{
+                background-color: #127bad;  
+            }
+        .dropshippingHomePage-content1 table{
+            margin: 5px 20px;
+        }
+            .dropshippingHomePage-content1 table thead{
+
+            }
+                .dropshippingHomePage-content1 table thead tr{
+
+                }
+                    .dropshippingHomePage-content1 table thead tr th{
+                        width: 14.5vw;
+                        background-color: #225;
+                        color: white;
+                    }
+                .dropshippingHomePage-table-tr-vazio{
+                    max-height: 1vh;
+                }
+                    #dropshippingHomePage-table-tr-addDelete-th-vazio{
+                        width: 14.5vw;
+                        background-color: white;
+                    }
+            .dropshippingHomePage-content1 tbody{
+                
+            }
+                .dropshippingHomePage-content1 tbody tr{
+
+                }
+                    .dropshippingHomePage-content1 tbody tr td{
+                        max-width: 14.5vw;
+                        width: 14.5vw; 
+                        background-color: rgb(208, 234, 255);
+                        text-align: center;
+                    }
+                    .dropshippingHomePage-content1 tbody tr input{
+                        max-width: 14.5vw;
+                        width: 14.5vw; 
+                        background-color: rgb(208, 234, 255);
+                        text-align: center;
+                    }
+                    #dropshippingHomePage-btn-desativar{
+                        width: 2vw;
+                        background-color: red;
+                        border-radius: 5px;
+                        padding: 0px 2px;
+                        cursor: pointer;
+                    }
+                    #dropshippingHomePage-btn-ativar{
+                        width: 2vw;
+                        background-color: greenyellow;
+                        border-radius: 5px;
+                        padding: 0px 2px;
+                        cursor: pointer;
+                    }

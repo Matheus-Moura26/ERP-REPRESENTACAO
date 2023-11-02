@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 //import style
-import '../styles/components/navbarfinancial.css'
-import '../styles/components/components.css'
+import '../../styles/components/representacao/navbarRepresentantefinancial.css'
+import '../../styles/components/components.css'
 
 export default function NavBarFinancial() {
   return (
@@ -15,10 +15,10 @@ export default function NavBarFinancial() {
                 <Link to="/liquidezComissaoHomePage">
                   <button >Comissão líquidez</button>
                 </Link>
-                <Link to="/">
+                <Link to="/financialPage">
                   <button >Botão</button>
                 </Link>
-                <Link to="/">
+                <Link to="/financialPage">
                   <button >Botão</button>
                 </Link>
               </div>
