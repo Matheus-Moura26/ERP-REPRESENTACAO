@@ -1,5 +1,6 @@
 //import library and setings
 import React, { useState } from 'react';
+import NavBar from "../../../components/navBar";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -31,6 +32,7 @@ export default function MostrarComissao() {
 
   return (
     <div className='body'>
+      <NavBar/> 
       <div className='financeiro-card-navbar'>
         <button onClick={puxarDados} >
           Todos os pedidos

@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBarEnergia from '../../../components/energia/navBarEnergia';
 import NavBarEnergiaFinanceiro from '../../../components/energia/navBarEnergiaFinanceiro';
+import NavBar from "../../../components/navBar";
 
 
 //import css
@@ -8,6 +9,7 @@ import NavBarEnergiaFinanceiro from '../../../components/energia/navBarEnergiaFi
 export default function Outros() {
   return (
     <div className='body-flexEnd'>
+        <NavBar/>
         <NavBarEnergia />
         <NavBarEnergiaFinanceiro />
     </div>

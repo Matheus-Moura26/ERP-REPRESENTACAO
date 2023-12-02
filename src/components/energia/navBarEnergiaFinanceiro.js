@@ -7,7 +7,7 @@ import "../../styles/components/energia/navBarEnergiaFinanceiro.css"
 export default function NavBarEnergiaFinanceiro() {
   return (
     <div className='energia-financeiro-card-navbar'>
-        <Link to="/financeiro">
+        <Link to="/financeiroUsina">
         <button className='energia-financeiro-card-navbar-button'>Main</button>
         </Link>
         <Link to="/clienteUsinas">

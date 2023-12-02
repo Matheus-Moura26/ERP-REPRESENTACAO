@@ -13,7 +13,7 @@ function NavBarEnergia() {
             <Link  to="/leituras">
             <li >Leituras</li>
             </Link>
-            <Link  to="/financeiro">
+            <Link  to="/financeiroUsina">
             <li >Financeiro</li>
             </Link>
             <Link  to="/requisicao">

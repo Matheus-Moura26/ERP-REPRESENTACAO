@@ -10,10 +10,10 @@ export default function NavBarLojaCopy() {
         <Link to="/dropshippingHomePage">
         <button className='loja-card-navbar-button'>Incluir Produtos</button>
         </Link>
-        <Link to="/dropshippingHomePage">
-        <button className='loja-card-navbar-button' >Outro</button>
+        <Link to="/dropshippingAddSupplier">
+        <button className='loja-card-navbar-button' >Fornecedores</button>
         </Link>
-        <Link to="/dropshippingHomePage">
+        <Link to="/dropshippingConfiguration">
         <button className='loja-card-navbar-button' >Configurações</button>
         </Link>
     </div>

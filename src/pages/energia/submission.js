@@ -1,6 +1,7 @@
 import { useState } from "react"
 import axios from "axios"
 import NavBarEnergia from "../../components/energia/navBarEnergia"
+import NavBar from "../../components/navBar";
 
 import "../../styles/pages/energia/form.css"
 import "../../styles/components/espacamento.css"
@@ -38,6 +39,7 @@ function UnidadeConsumidoraCpfSubmission() {
 
     return(
       <div className="form-body" id="body" >
+        <NavBar/>
         <NavBarEnergia/>
         <div className='login-form-card' id="submission-card-espacamento">
                   <h2 id="login-form-title">Insira as informações abaixo</h2>

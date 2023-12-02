@@ -5,7 +5,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import NavBar from "./components/navBar";
 
 //Import pages
-import Main from "./pages/main";
+import Main from "./pages/main/main";
+
+  //PADRÃO
+    import Financeiro from "./pages/financeiro";
+    import Clientes from './pages/clientes';
   //REPRESENTACAO
     import RepresentacaoHome from './pages/representacao/representacaoHome';
     import AdicionaLiquidez from './pages/representacao/liquidezComissao/adicionarLiquidez';
@@ -16,14 +20,15 @@ import Main from "./pages/main";
   //ENERGIA
     import Home from './pages/energia/energiaHome';
     import UnidadeConsumidoraCpfSubmission from './pages/energia/submission';
-    import Financeiro from './pages/energia/financeiro/financeiro';
+    import FinanceiroUsina from './pages/energia/financeiro/financeiroUsina';
     import Leituras from './pages/energia/leituras';
-    import Clientes from './pages/clientes';
     import ClienteUsinas from './pages/energia/financeiro/clienteUsinas';
     import Outros from './pages/energia/financeiro/outros';
     import LojaHome from './pages/loja/lojaHome';
   //LOJA
     import DropshippingHomePage from './pages/loja/dropshipping/dropshippingHomePage';
+    import DropshippingConfiguration from './pages/loja/dropshipping/dropshippingConfiguration';
+    import DropshippingAddSupplier from './pages/loja/dropshipping/dropshippingAddSupplier';
 
 //import style
 import './styles/reset.css'
@@ -33,8 +38,11 @@ import './styles/reset.css'
 function App() {
   return (
     <Router>
-      <NavBar />
+     {/*  <NavBar /> */}
       <Routes>
+        {/* PADRAO */}
+          <Route path='/clientes' element={<Clientes />} />
+          <Route path='/financeiro' element={<Financeiro />} />
         {/* REPRESENTACAO */}
           {/* Pagina financeira  */}
           <Route path="/representacaoHome" element={<RepresentacaoHome />} />
@@ -47,14 +55,15 @@ function App() {
         {/* ENERGIA */}
           <Route path='/energiaHome' element={<Home />} />
           <Route path='/requisicao' element={<UnidadeConsumidoraCpfSubmission />} />
-          <Route path='/financeiro' element={<Financeiro />} />
+          <Route path='/financeiroUsina' element={<FinanceiroUsina />} />
           <Route path='/leituras' element={<Leituras />} />
-          <Route path='/clientes' element={<Clientes />} />
           <Route path='/clienteUsinas' element={<ClienteUsinas/>} />
           <Route path='/outros' element={<Outros/>} />
-          <Route path='/lojaHome' element={<LojaHome/>} />
         {/* LOJA */}
+          <Route path='/lojaHome' element={<LojaHome/>} />
           <Route path='/dropshippingHomePage' element={<DropshippingHomePage/>} />
+          <Route path='/dropshippingConfiguration' element={<DropshippingConfiguration/>} />
+          <Route path='/dropshippingAddSupplier' element={<DropshippingAddSupplier/>} />
 
         <Route path="/" element={<Main />} />
       </Routes>

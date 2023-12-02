@@ -1,0 +1,188 @@
+.dropshippingSupplier-body{
+    margin-left: 13vw;
+    width: 87%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropshippingSupplier-table-body{
+    margin-top: 22vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropshippingSupplier-table-tr-addDelete{
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3vw;
+}
+.dropshippingSupplier-table-tr-addDelete-buttonsDiv{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: -5vw;
+}
+    .searchContainer{
+        display: flex;
+        background-color: white;
+        width: 15vw;
+        height: 40px;
+    }
+
+            .search-input{
+                display: flex;
+                margin-right: -2.3vw;
+                border: 1px solid black;
+                border-radius: 20px;
+                padding-left: 6px;
+                width: 100%;
+            }
+
+                .search-button-card{
+                    border-radius: 30px;
+                    width: 40px;
+                    height: 40px;
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
+                    .search-button-searchbtn{
+
+                    }
+                    .search-button-closeBtn{
+                        display: none;
+                    }
+    #dropshippingSupplier-table-tr-addDelete-th-add{
+        width: 5vw;
+        background-color: white;
+
+    }
+    .dropshippingSupplier-table-tr-addDelete-th-add-btn{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: white;
+        color: black;
+        border: #127bad 1px solid;
+        border-radius: 15px;
+        transition: .3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .dropshippingSupplier-table-tr-addDelete-th-add-btn:hover{
+        background-color: #127bad;
+    }
+    .dropshippingSupplier-table-tr-addDelete-th-delete{
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 5px 10px;
+         background-color: white;
+         color: black;
+         border: #127bad 1px solid;
+         border-radius: 15px;
+         transition: .3s ease-in-out;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+    }
+    .dropshippingSupplier-table-tr-addDelete-th-delete:hover{
+        background-color: #127bad;  
+    }
+
+    .dropshippingSupplier-table-body table thead tr th{
+        padding: 5px 45px;
+    }
+    .dropshippingSupplier-table-body tbody tr td{
+        padding: 5px 45px;
+    }
+
+    /* Cadastro de produtos */
+        .dropshippingSupplier-form-cadastroFornecedor-body{
+            top: 0;
+            width: 87vw;
+            height: 100vh;
+            background-color: #7d7d855b;
+            backdrop-filter: blur(50px);
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+        }
+        .dropshippingSupplier-form-cadastroFornecedor-card{
+            width: 40%;
+            height: 64vh;
+            background-color: rgb(23, 23, 105);
+            box-shadow: 0 0 50px 15px #127bad;
+            border-radius: 15px;
+            backdrop-filter: blur(100px);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+        }
+        .dropshippingSupplier-form-cadastroFornecedor-card-close{
+            position: absolute;
+            margin-top: -60vh;
+            margin-right: -32vw;
+            padding: 3px 6px;
+            background-color: red;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+        
+        .dropshippingSupplier-form-cadastroFornecedor-card label{
+            padding-top: .5vh;
+            width: 70%;
+            color: white;
+        }
+        .dropshippingSupplier-form-cadastroFornecedor-card input{
+            padding-top: .5vh;
+            width: 70%;
+            border-bottom: 1px solid blue;
+        }
+        .dropshippingSupplier-form-cadastroFornecedor-card select{
+            padding-top: .5vh;
+            width: 70%;
+            border-bottom: 1px solid blue;
+            color: white;
+        }
+        .dropshippingSupplier-form-filtrar-card select option{
+            color: black;
+        }
+        .dropshippingSupplier-form-cadastroFornecedor-card button{
+            background-color: greenyellow;
+            padding: 10px 10px;
+            margin-top: 3vh;
+            border-radius: 10px;
+            cursor: pointer;
+            text-shadow: .1px .1px black;
+        }
+        .dropshippingSupplier-form-cadastroFornecedor-card button:hover{
+            background-color: rgb(153, 255, 0);
+        }
+
+        #dropshippingHomePage-btn-desativar{
+            width: 2vw;
+            background-color: red;
+            border-radius: 5px;
+            padding: 0px 2px;
+            cursor: pointer;
+        }

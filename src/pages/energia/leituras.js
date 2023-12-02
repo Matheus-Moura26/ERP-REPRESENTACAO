@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Chart } from "react-google-charts";
 import NavBarEnergia from '../../components/energia/navBarEnergia';
+import NavBar from "../../components/navBar";
 
 
 import "../../styles/components/energia/navBarEnergia.css"
@@ -108,6 +109,7 @@ export default function Leituras() {
 
   return (
     <div className='leituras-body'>
+      <NavBar/>
       <NavBarEnergia />
           { /* 1- Primeiro um card com o cliente, endereço data da leitura assim como vencimento */}
           <div className='leituras-totalCard'>

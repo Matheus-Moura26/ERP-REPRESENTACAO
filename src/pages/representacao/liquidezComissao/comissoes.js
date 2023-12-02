@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 /* import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css'; */
 import axios from 'axios';
+import NavBar from "../../../components/navBar";
 
 
 //import style
@@ -87,6 +88,7 @@ const buscarComissões = async () => {
   
   return (
     <div className='body'>
+      <NavBar/>
         <ul className='comissoes-filtro-card'>
             <li className='comissoes-filtro-li'>
                 <select 

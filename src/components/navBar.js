@@ -17,7 +17,7 @@ export default function NavBar() {
                   <Link  to="/">
                     <li className='navBar-button' id='navBar-button-home'>Home</li>
                   </Link>
-                  <Link  to="/">
+                  <Link  to="/financeiro">
                     <li className='navBar-button'>Financeiro</li>
                   </Link>
                   <Link  to="/clientes">

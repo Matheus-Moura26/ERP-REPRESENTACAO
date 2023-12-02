@@ -8,7 +8,7 @@ import React,{useState, useEffect} from 'react'
 import { useForm } from 'react-hook-form';
 import axios from 'axios'
 import InputMask from 'react-input-mask'
-
+import NavBar from "../../../components/navBar";
 
 
 export default function AdicionaLiquidez() {
@@ -79,6 +79,7 @@ export default function AdicionaLiquidez() {
 
   return (
     <div className='body'>
+      <NavBar/>
         <div className='tabelaLiquidez-title-card'>
             <h1 className='tabelaLiquidez-title-h1'>
                 Tabela de liquidez

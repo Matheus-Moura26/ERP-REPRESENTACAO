@@ -1,3 +1,4 @@
+import NavBar from "../../components/navBar";
 import NavBarFinancial from "../../components/representacao/navBarRepresentanteFinancial";
 import NavBarRepresentante from "../../components/representacao/navBarRepresentante";
 
@@ -8,6 +9,7 @@ export default function FinancialPage (){
     return (
         
         <div className="body">
+            <NavBar/>
             <NavBarRepresentante />
             <NavBarFinancial/>
             

@@ -1,3 +1,4 @@
+import NavBar from "../components/navBar";
 import React, { useState, useEffect } from 'react'
 
 
@@ -116,9 +117,7 @@ export default function Clientes() {
     
 
     <div className='clientes-body'>
-        <div>
-
-        </div>
+        <NavBar/>
         {/* FORMULARIO QUE APARECE QUANDO FOR DELETAR CLIENTE */}
             {deletarClienteAviso === true ? ( 
             <div className='deletarCliente-background' onClick={() => setDeletarClienteAviso(false)}>

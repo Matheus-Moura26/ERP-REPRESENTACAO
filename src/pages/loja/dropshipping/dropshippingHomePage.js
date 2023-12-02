@@ -1,6 +1,7 @@
   //IMPORTAR COMPONENTES
       import NavBarLoja from '../../../components/loja/navBarLoja';
       import NavBarLojaCopy from '../../../components/loja/navBarLoja copy';
+      import NavBar from "../../../components/navBar";
   //IMPORTAR BIBLIOTECAS OU HOOKS
       import React, { useEffect, useState } from 'react';
   //IMPORTAR DESIGN
@@ -160,6 +161,7 @@
   };
     return (
       <div className='dropshippingHomePage-body'>
+          <NavBar/>
           <NavBarLoja/>
           <NavBarLojaCopy/>
           <div className='dropshippingHomePage-content1'>
@@ -245,10 +247,18 @@
               <h3>Produtos não Dropshipping: {produtos.length-produtosDropshipping.length}</h3>
             </div>
                 <div className='dropshippingHomePage-table-tr-addDelete'>
-                  <div id='dropshippingHomePage-table-tr-addDelete-th-add-btn' onClick={handleFiltrar}>Filtrar</div>
-                  <div id='dropshippingHomePage-table-tr-addDelete-th-add-btn' onClick={handleCadastrar}>Cadastrar</div>
-                  <div id='dropshippingHomePage-table-tr-addDelete-th-delete' onClick={handleDeletar}>Excluir</div>
-                  <input />
+                  <div className='dropshippingHomePage-table-tr-addDelete-buttonsDiv'>
+                    <div id='dropshippingHomePage-table-tr-addDelete-th-add-btn' onClick={handleFiltrar}>Filtrar</div>
+                    <div id='dropshippingHomePage-table-tr-addDelete-th-add-btn' onClick={handleCadastrar}>Cadastrar</div>
+                    <div id='dropshippingHomePage-table-tr-addDelete-th-delete' onClick={handleDeletar}>Excluir</div>
+                  </div>
+                  <div class="searchContainer">
+                      <input type="search" placeholder="Pesquise" name="q" class="search-input" />
+
+                      <div class="search-button-card" >
+                        <i class="search-button-searchbtn">+</i>
+                      </div>
+                  </div>
                 </div>
             <table>
               <thead>
