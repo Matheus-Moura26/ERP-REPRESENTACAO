@@ -38,7 +38,6 @@ import './styles/reset.css'
 function App() {
   return (
     <Router>
-     {/*  <NavBar /> */}
       <Routes>
         {/* PADRAO */}
           <Route path='/clientes' element={<Clientes />} />
@@ -67,8 +66,8 @@ function App() {
 
         <Route path="/" element={<Main />} />
       </Routes>
+      <Main/>
     </Router>
-    
   );
 }
 

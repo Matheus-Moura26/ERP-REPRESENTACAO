@@ -1,5 +1,5 @@
 #mainPage-card{
-    background-image: url("../../../styles/imagens/background padrao/13.jpg");
+    background-image: url("../../../styles/imagens/background padrao/15.jpg");
     background-attachment: scroll;
     background-size: cover;
     width: 100%;
@@ -82,7 +82,7 @@
 
     .mainPage-card-box-center{
         width: 80vw;
-        height: 60vh;
+        height: 70vh;
         z-index: 2;
         display: flex;
         flex-direction: row;
@@ -94,6 +94,30 @@
         backdrop-filter: blur(12px);
         margin: 20vh 2vw;
     }
+    .mainPage-card-box-pacotes{
+        width: 95vw;
+        height: 80vh;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgba(0, 0, 0, 0.000);
+        margin: 15vh 2vw;
+    }
+        .mainPage-card-box-pacotes h2{
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .mainPage-card-box-pacotes p{
+            align-items: center;
+            color: lightskyblue;
+            text-align: center;
+        }
 
         .mainPage-caard-box-h2-up{
             position: absolute;
@@ -105,48 +129,146 @@
         }
 
         .mainPage-card-box-subBox1{
-            margin-top: 10vh;
-            width: 20vw;
-            height: 40vh;
-            z-index: 2;
-            box-shadow: 0 0 2px 2px rgb(102, 255, 0) ;
+            width: 21vw;
+            height: 70vh;
+            z-index: 2; 
+            box-shadow: 0 0 2px 2px rgb(198, 255, 161) ;
             border-radius: 5px;
             background-color: rgba(255, 255, 255, 0.100) ;
             backdrop-filter: blur(100px);
             transition: .5s ease-in-out;
         }
-        .mainPage-card-box-subBox2{
-            margin-top: 10vh;
-            width: 20vw;
-            height: 40vh;
-            z-index: 2;
-            box-shadow: 0 0 2px 2px rgb(255, 128, 0);
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.100) ;
-            backdrop-filter: blur(100px);
-            transition: .5s ease-in-out;
-        }
-        .mainPage-card-box-subBox3{
-            margin-top: 10vh;
-            width: 20vw;
-            height: 40vh;
-            z-index: 2;
-            box-shadow: 0 0 2px 2px rgb(8, 0, 255);
-            border-radius: 5px;
-            background-color: rgba(255, 255, 255, 0.100) ;
-            backdrop-filter: blur(100px);
-            transition: .5s ease-in-out;
-        }
-
         .mainPage-card-box-subBox1:hover{
             width: 22vw;
-            height: 44vh;
+            height: 72vh;
+            box-shadow: 0 0 2px 2.5px rgb(102, 255, 0) ; 
+        }
+        .mainPage-card-box-subBox2{
+            width: 21vw;
+            height: 70vh;
+            z-index: 2;
+            box-shadow: 0 0 2px 2px rgb(255, 193, 131);
+            z-index: 2;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.100) ;
+            backdrop-filter: blur(100px);
+            transition: .5s ease-in-out;
         }
         .mainPage-card-box-subBox2:hover{
             width: 22vw;
-            height: 44vh;
+            height: 72vh;
+            box-shadow: 0 0 2px 2.5px rgb(255, 128, 0);
+        }
+        .mainPage-card-box-subBox3{
+            width: 21vw;
+            height: 70vh;
+            z-index: 2;
+            box-shadow: 0 0 2px 2px rgb(134, 249, 255);
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.100) ;
+            backdrop-filter: blur(100px);
+            transition: .5s ease-in-out;
         }
         .mainPage-card-box-subBox3:hover{
             width: 22vw;
-            height: 44vh;
+            height: 72vh;
+            box-shadow: 0 0 2px 2.5px rgb(0, 242, 255);
         }
+        .mainPage-card-box-subBox4{
+            width: 21vw;
+            height: 70vh;
+            z-index: 2;
+            box-shadow: 0 0 2px 2px rgb(144, 141, 255);
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.100) ;
+            backdrop-filter: blur(100px);
+            transition: .5s ease-in-out;
+        }
+        .mainPage-card-box-subBox4:hover{
+            width: 22vw;
+            height: 72vh;
+            box-shadow: 0 0 2px 2.5px rgb(8, 0, 255);
+        }
+        .mainPage-card-box-subBox-divisoriaArea{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(240, 248, 255, 0);
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+                .mainPage-card-box-subBox-divisoria{
+                    width: 95%;
+                    height: 1px;
+                    background-color: aliceblue;
+                    margin-left: 1%;
+                }
+            .mainPage-card-box-subBox-precoArea{
+                display: flex;
+                background-color: rgba(240, 248, 255, 0);
+                justify-content: center;
+                align-items: center;
+            }
+                #mainPage-card-box-subBox-precoTitle{
+                    color: white;
+                    display: inline;
+                    text-align: center;
+                }
+                #mainPage-card-box-subBox-precoValue{
+                    color: white;
+                    display: inline;
+                    text-align: center;
+                }
+            .mainPage-card-box-subBox1 ul{
+                margin-left: 1vw;
+            }
+            .mainPage-card-box-subBox1 ul li{
+                list-style: inside;
+                color: white;
+            }
+            .mainPage-card-box-subBox2 ul{
+                margin-left: 1vw;
+            }
+            .mainPage-card-box-subBox2 ul li{
+                list-style: inside;
+                color: white;
+            }
+            .mainPage-card-box-subBox3 ul{
+                margin-left: 1vw;
+            }
+            .mainPage-card-box-subBox3 ul li{
+                list-style: inside;
+                color: white;
+            }
+            .mainPage-card-box-subBox4 ul{
+                margin-left: 1vw;
+            }
+            .mainPage-card-box-subBox4 ul li{
+                list-style: inside;
+                color: white;
+            }
+            .mainPage-card-box-btnPosition{
+                position: absolute;
+                bottom: 10px;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+                .mainPage-card-box-saibaMaisBtn{
+                    padding: 10px 20px;
+                    background-color: aqua;
+                    border-radius: 30px;
+                    margin: 10px 30px;
+                }
+                #mainPage-card-box-btnPTag{
+                    color: white;
+                    width: 100%;
+                }
+                .mainPage-card-box-comprarAgoraBtn{
+                    padding: 10px 20px;
+                    background-color: greenyellow;
+                    border-radius: 30px;
+                    margin: 10px 30px;
+                }
