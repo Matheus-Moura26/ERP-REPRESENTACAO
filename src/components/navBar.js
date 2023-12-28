@@ -29,15 +29,15 @@ export default function NavBar() {
                   <Link  to="/">
                     <li className='navBar-button'>Configurações</li>
                   </Link>
-                  <Link  to="/representacaoHome">
+                  {/* <Link  to="/representacaoHome">
                     <li className='navBar-button'>Gestor Representação</li>
-                  </Link>
+                  </Link> */}
                   <Link  to="/lojaHome">
                     <li className='navBar-button'>Gestor Loja</li>
                   </Link>
-                  <Link  to="/energiaHome">
+                  {/* <Link  to="/energiaHome">
                     <li className='navBar-button'>Gestor energético</li>
-                  </Link>
+                  </Link> */}
 
                   <Link  to="/Logout">
                     <li id='button-logout' className='navBar-button'>Logout</li>

@@ -1,0 +1,57 @@
+.productsPage-Body{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../styles/imagens/background padrao/15.jpg");
+}
+    .planosNameCard{
+        background-color: transparent;
+        margin-top: 10vh;
+        display: flex;
+        margin-left: 21.5%;
+    }
+        .planosName{
+            width: 150px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid black;
+        }
+    .tabelaArea{
+        display: flex;
+        width: 100%;
+    }
+        .planosBeneficios{
+            width: 40%;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+            .planosBeneficios div{
+                margin: 5.7px 0px;
+            }
+        .verificacaoPorClienteArea{
+            display: flex;
+
+        }
+        .verificacaoPorCliente{
+            padding: 10px;
+            margin: 10px;
+            width: 130px;
+        }
+        .verificacaoPorCliente div{
+            margin: 5px 0px;
+            text-align: center;
+        }
+        .comprarBtn{
+            width: 110%;
+            height: 30px;
+            background-color: greenyellow;
+            border-radius: 30px;
+            border: 1px solid black;
+            cursor: pointer;
+        }

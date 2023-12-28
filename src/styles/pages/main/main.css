@@ -43,6 +43,7 @@
             border-radius: 20px;
             margin: 0px 10px;
             border: 2px solid rgb(93, 155, 0);
+            cursor: pointer;
         }
 
         #mainPage-cadastrarBtn{
@@ -51,6 +52,7 @@
             border-radius: 20px;
             margin: 0px 10px;
             border: 2px solid black;
+            cursor: pointer;
         }
 
     .mainPage-card-box{
@@ -189,13 +191,17 @@
             height: 72vh;
             box-shadow: 0 0 2px 2.5px rgb(8, 0, 255);
         }
+            .mainPage-card-box-textArea{
+                background-color: transparent;
+                height: 76.800px;
+            }
         .mainPage-card-box-subBox-divisoriaArea{
             width: 100%;
             display: flex;
             justify-content: center;
             background-color: rgba(240, 248, 255, 0);
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
         }
                 .mainPage-card-box-subBox-divisoria{
                     width: 95%;
@@ -261,6 +267,7 @@
                     background-color: aqua;
                     border-radius: 30px;
                     margin: 10px 30px;
+                    cursor: pointer;
                 }
                 #mainPage-card-box-btnPTag{
                     color: white;
@@ -271,4 +278,5 @@
                     background-color: greenyellow;
                     border-radius: 30px;
                     margin: 10px 30px;
+                    cursor: pointer;
                 }

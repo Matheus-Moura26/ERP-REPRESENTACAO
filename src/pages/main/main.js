@@ -10,13 +10,18 @@ function Main(){
         <div id='mainPage-card'>
             <div className='mainPage-card-filtro'></div>
             <div className='mainPage-head'>
-                <Link to="/lojaHome">
+                <Link /* to="/lojaHome" */ to='/login'>
                     <button id='mainPage-loginBtn'>Login</button>
                 </Link>
 
-                <Link>
+                <Link to="/cadastro">
                     <button id='mainPage-cadastrarBtn'>Cadastrar</button>
                 </Link>
+            </div>
+
+            <div className='mainPage-card-box mainPage-card-box-center'>
+                <h2>Integramos o sistema a seu erp, mas lhe adianto que o nosso é bem melhor</h2>
+                <p>Temos um erp prontinho para lhe atender já integrado à nossos outros sistemas, tudo bastante fácil e prático, integramos fornecedores e gerimos seu estoque assim como gerimos produtos dropshipping, vendas e compras automatizadas, tenha sua empresa trabalhando como um robô e tenha total controle sobre ela na palma de sua mão, veja os indicativos de produtividade de cada funcionário e use nossas Inteligências artificiais para ajuda-lo a gerir tudo isto.</p>
             </div>
 
             <div className='mainPage-card-box'>
@@ -29,16 +34,13 @@ function Main(){
                 <p>Deixe nosso sistema verificar quais produtos estão disponíveis em seu fornecedor e quais devem ser ocultados por não ter estoque em seus fornecedores.</p>
             </div>
 
-            <div className='mainPage-card-box mainPage-card-box-center'>
-                <h2>Integramos o sistema a seu erp, mas lhe adianto que o nosso é bem melhor</h2>
-                <p>Temos um erp prontinho para lhe atender já integrado à nossos outros sistemas, tudo bastante fácil e prático, integramos fornecedores e gerimos seu estoque assim como gerimos produtos dropshipping, vendas e compras automatizadas, tenha sua empresa trabalhando como um robô e tenha total controle sobre ela na palma de sua mão, veja os indicativos de produtividade de cada funcionário e use nossas Inteligências artificiais para ajuda-lo a gerir tudo isto.</p>
-            </div>
-
             <div className='mainPage-card-box-pacotes'>
 
                 <div className='  mainPage-card-box-subBox1'>
                     <h2>Gratuito</h2>
-                    <p>Os primeiros passos para a evolução de seu negocio</p>
+                    <div className='mainPage-card-box-textArea'>
+                        <p>Os primeiros passos para a evolução de seu negócio, começando da melhor forma possível.</p>
+                    </div>
                     <div className='mainPage-card-box-subBox-divisoriaArea'>
                         <div className='mainPage-card-box-subBox-divisoria'></div>
                     </div>
@@ -59,14 +61,18 @@ function Main(){
                     </ul>
 
                     <div className='mainPage-card-box-btnPosition'>
-                        <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        <Link to="/productsPage">
+                            <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        </Link>
                         <p id='mainPage-card-box-btnPTag'>ou</p>
                         <button className='mainPage-card-box-comprarAgoraBtn'>Comprar agora</button>
                     </div>
                 </div>
                 <div className='mainPage-card-box-subBox3'>
                     <h2>Pacote Dealer</h2>
-                    <p>Pague seus fornecedores apenas quando receber de seus clientes e não se preocupe com estoque, o produto vai do fornecedor para seu cliente</p>
+                    <div className='mainPage-card-box-textArea'>
+                        <p>Pague seus fornecedores apenas quando receber de seus clientes e não se preocupe com estoque, o produto vai do fornecedor para seu cliente</p>
+                    </div>
                     <div className='mainPage-card-box-subBox-divisoriaArea'>
                         <div className='mainPage-card-box-subBox-divisoria'></div>
                     </div>
@@ -87,14 +93,18 @@ function Main(){
                     </ul>
 
                     <div className='mainPage-card-box-btnPosition'>
-                        <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        <Link to="/productsPage">
+                            <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        </Link>
                         <p id='mainPage-card-box-btnPTag'>ou</p>
                         <button className='mainPage-card-box-comprarAgoraBtn'>Comprar agora</button>
                     </div>
                 </div>
                 <div className='mainPage-card-box-subBox2'>
                     <h2>Pacote Bussines</h2>
-                    <p>Para automatizar processos de sua empresa e ganhar produtividade</p>
+                    <div className='mainPage-card-box-textArea'>
+                        <p>Para automatizar processos de sua empresa e ganhar produtividade com o melhor ERP do mercado</p>
+                    </div>
                     <div className='mainPage-card-box-subBox-divisoriaArea'>
                         <div className='mainPage-card-box-subBox-divisoria'></div>
                     </div>
@@ -115,14 +125,18 @@ function Main(){
                     </ul>
 
                     <div className='mainPage-card-box-btnPosition'>
-                        <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        <Link to="/productsPage">
+                            <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        </Link>
                         <p id='mainPage-card-box-btnPTag'>ou</p>
                         <button className='mainPage-card-box-comprarAgoraBtn'>Comprar agora</button>
                     </div>
                 </div>
                 <div className='mainPage-card-box-subBox4'>
                     <h2>Pacote Enterprise</h2>
+                    <div className='mainPage-card-box-textArea'>
                     <p>Tenha acesso a tudo de melhor que podemos oferecer saia a frente de seus concorrentes com nosso sistema inteligente de vendas e compras </p>
+                    </div>
                     <div className='mainPage-card-box-subBox-divisoriaArea'>
                         <div className='mainPage-card-box-subBox-divisoria'></div>
                     </div>
@@ -135,7 +149,7 @@ function Main(){
                     <ul>
                         <li>Acesso ao melhor ERP e unico sistema inteligente de dropshipping</li>
                         <li>10 usuários</li>
-                        <li>30 GB de dados</li>
+                        <li>30 GB de dados</li> 
                         <li>Aumente a produtividade de seus funcionários</li>
                         <li>Acesso ao nosso sistema de dropshipping</li>
                         <li>Logística automatizada</li>
@@ -143,22 +157,13 @@ function Main(){
                     </ul>
 
                     <div className='mainPage-card-box-btnPosition'>
-                        <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        <Link to="/productsPage">
+                            <button className='mainPage-card-box-saibaMaisBtn'>Saiba mais</button><br></br>
+                        </Link>
                         <p id='mainPage-card-box-btnPTag'>ou</p>
                         <button className='mainPage-card-box-comprarAgoraBtn'>Comprar agora</button>
                     </div>
                 </div>
-            </div>
-            
-            <div className='mainPage-card-box'>
-                <h2>Exemplo de box 2</h2>
-            </div>
-            <div className='mainPage-card-box'>
-                <h2>Exemplo de box 3</h2>
-            </div>
-
-            <div className='mainPage-card-box'>
-                <h2>Exemplo de box 4</h2>
             </div>
 
         </div>

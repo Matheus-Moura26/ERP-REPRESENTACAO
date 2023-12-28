@@ -6,6 +6,8 @@ import NavBar from "./components/navBar";
 
 //Import pages
 import Main from "./pages/main/main";
+import Login from './pages/main/login';
+import Cadastro from './pages/main/cadastro';
 
   //PADRÃO
     import Financeiro from "./pages/financeiro";
@@ -29,7 +31,7 @@ import Main from "./pages/main/main";
     import DropshippingHomePage from './pages/loja/dropshipping/dropshippingHomePage';
     import DropshippingConfiguration from './pages/loja/dropshipping/dropshippingConfiguration';
     import DropshippingAddSupplier from './pages/loja/dropshipping/dropshippingAddSupplier';
-
+    import ProductsPage from './pages/loja/marketing/productsPage/productsPage';
 //import style
 import './styles/reset.css'
 //Create settings
@@ -63,10 +65,12 @@ function App() {
           <Route path='/dropshippingHomePage' element={<DropshippingHomePage/>} />
           <Route path='/dropshippingConfiguration' element={<DropshippingConfiguration/>} />
           <Route path='/dropshippingAddSupplier' element={<DropshippingAddSupplier/>} />
+          <Route path='/productsPage' element={<ProductsPage/>} />
 
         <Route path="/" element={<Main />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cadastro" element={<Cadastro />} />
       </Routes>
-      <Main/>
     </Router>
   );
 }
